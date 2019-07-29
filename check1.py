@@ -16,7 +16,7 @@ print(dataset.head())
 X = dataset[['memory','cpu']]
 y = dataset['replicas']
 
-X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2,random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.5,random_state=0)
 
 linear_regressor.fit(X_train,y_train)
 
